@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="shortcut icon" href="./asset/iconoSNPCoo.png" type="image/x-icon">
+    <title>SNP Coo. | CONTACTO</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="">
+                    <img class="navbar__sitelogo" src="./asset/iconoSNPCoo.png" alt="logo site web">
+                    <span id="snavbar__sitename">Seguro No Pagamos Cooperativa</span>
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="./Inicio.html" class="navbar__link">INICIO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./productos.html" class="navbar__link">PRODUCTOS</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./faqs.html" class="navbar__link">FAQs</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./contact.html" class="navbar__link">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-visualizer">
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+
+                <label for="apellido"></label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+
+                <label for="dni"></label>
+                <input type="number" id="dni" name="apellido" pattern="[0-9]*" placeholder="DNI"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico"><br>
+
+                <label for="telefono"></label>
+                <input type="number" id="telefono" name="telefono" pattern="[0-9]*" placeholder="Teléfono"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Seguro</legend>
+                <div class="select-container">
+                    <label for="tipo-seguro"></label>
+                    <select id="tipo-seguro" name="tipo-seguro">
+                        <option value="" disabled selected>Selecciona tu tipo de seguro actual</option>
+                        <option value="basico">Básico</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <div class="precio-container">
+                        <span id="precio-basico" class="precio">$500</span>
+                        <span id="precio-intermedio" class="precio">$1000</span>
+                        <span id="precio-premium" class="precio">$1500</span>
+                    </div>
+                </div>
+            </fieldset>
+            
+
+            <input class="input__form" type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>Todos los Derechos Reservados®</p>
+        <p>By Franco Fazzolari 🧠</p>
+    </footer>
+
+    <script src="./precioScript.js"></script>
+
+</body>
+
+</html>
