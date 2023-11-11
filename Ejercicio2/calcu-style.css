@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+}
+
+.calculator {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5%;
+    font-size: 2em;
+    background-color: #f6d51a;
+}
+
+.reset{
+    background-color: rgb(220, 97, 9);
+    font-weight: bold;
+    color: #3d1707;
+}
+
+#result,
+input{
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 0.9em;
+}
+

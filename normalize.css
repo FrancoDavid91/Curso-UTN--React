@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #EAEBEC;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.menu img {
+  display: block;
+  margin: 0 auto; 
+}
+
+.menu .btn-nav {
+  margin: 10px; 
+}
+
+
+.btn-nav {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5%;
+  font-size: 2em;
+  background-color: #f6d51a;
+}
+
+.btn-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+.menu img, nav img{
+  max-width: 90px;
+}

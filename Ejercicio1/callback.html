@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../asset/iconoTP2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../normalize.css">
+    <title>TP N°2 UTN | Ejercicio 1</title>
+</head>
+
+<nav>
+    <img src="../asset/UTN_logo.jpg" alt="logo UTN">
+    <button class="btn-nav"><a href="../index.html">Menu</a></button>
+    <button class="btn-nav"><a href="./callback.html">Ejercicio 1</a></button>
+    <button class="btn-nav"><a href="../Ejercicio2/calculadora.html">Ejercicio 2</a></button>
+</nav>
+
+<body>
+    <h1>TP N°2 UTN | Ejercicio 1</h1>
+    <br>
+    <p>Dada la siguiente función en JavaScript:</p>
+    <pre>
+        <code>
+            function suma(a, b, callback) {
+                let c = a + b;
+                callback();
+            }
+        </code>
+    </pre>
+
+    <ol>
+        <li>¿Qué es el tercer parámetro recibido?</li>
+        <p>El tercer parámetro recibido en la función "suma" es la función "callback". En este contexto, una función de
+            "callback" es una función que se pasa como argumento a otra función y se ejecuta después de que se complete
+            cierta tarea.</p>
+
+        <li>¿En qué casos es obligatorio desarrollar este tipo de funciones?</li>
+        <p>Las funciones de "callback" son necesarias en programación para gestionar operaciones asíncronas y
+            personalización de comportamiento. Se utilizan en situaciones en las que es importante controlar cuándo y
+            cómo se ejecutan ciertas tareas.</p>
+
+        <li>Realizar un llamado a la función de ejemplo.</li>
+    </ol>
+
+    <pre>
+        <code>
+            Aquí mostramos una llamada a la función "callback" como parámetro de la función "suma". 
+            Se elige una acción simple y arbitraria para la función "callback," únicamente con fines demostrativos.
+            El script de ejercicio1.js se llama en un archivo index.html de ejemplo, para mostrarse en la consola del browser (herramienta de inspección).
+
+            function suma (a,b,callback){
+                let c = a +b;
+                callback(c);
+            }
+            
+            function callback(){
+                console.log("La suma es: " + c);
+            }
+            
+            suma(2,3,callback)
+        </code>
+    </pre>
+
+    <script src="ejercicio1.js"></script>
+</body>
+
+</html>

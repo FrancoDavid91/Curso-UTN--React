@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../asset/iconoTP2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./calcu-style.css">
+    <title>TP N°2 UTN | Ejercicio 2</title>
+</head>
+
+<body>
+
+    <nav>
+        <img src="../asset/UTN_logo.jpg" alt="logo UTN">
+        <button class="btn-nav"><a href="../index.html">Menu</a></button>
+        <button class="btn-nav"><a href="../Ejercicio1/callback.html">Ejercicio 1</a></button>
+        <button class="btn-nav"><a href="./calculadora.html">Ejercicio 2</a></button>
+    </nav>
+
+    <h1>TP N°2 UTN | Ejercicio 2</h1>
+    <br>
+
+    <h2>Calculadora Básica</h2>
+
+    <div class="calculator">
+        <input type="text" id="operand1" placeholder="Ingrese el primer operando">
+        <input type="text" id="operand2" placeholder="Ingrese el segundo operando">
+        <button onclick="calculate('+')">Suma</button>
+        <button onclick="calculate('-')">Resta</button>
+        <button onclick="calculate('*')">Multiplicación</button>
+        <button onclick="calculate('/')">División</button>
+        <button class="reset" onclick="resetCalculator()">Reset</button>
+        <input type="text" id="result" placeholder="Resultado" readonly>
+    </div>
+
+    <script src="./calcu-Script.js"></script>
+</body>
+
+</html>
